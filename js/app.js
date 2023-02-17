@@ -42,5 +42,16 @@ document.getElementById('triangle-btn').addEventListener('click' , function(){
     
 })
 // Area (A) = w x l
+document.getElementById('ractangle-btn').addEventListener('click' , function(){
+    serial+=1;
+    const nameOfCalculation = getElementValueById('ractangle');
+    const width = getFieldValueById('ractangle-width');
+    const length = getFieldValueById('ractangle-length');
+    const area = width * length;
+    if(isNaN(area) || area <= 0){
+        return alert('please provide a valid number')
+    }
+    setTheTable(serial,nameOfCalculation,area);
+})
 
 
