@@ -72,18 +72,18 @@
                           <img src="./images/rectangle.png" />
                         </figure>
                         <div class="card-body  text-center">
-                          <h2 class="card-title font-bold text-2xl mx-auto mt-5 mb-3">Rectangle</h2>
+                          <h2 id="ractangle" class="card-title font-bold text-2xl mx-auto mt-5 mb-3">Rectangle</h2>
                           <p>Area (A) = w x l</p>
                           <div class="flex mt-5">
                             <div class="w-2/4">
-                                <input type="text" placeholder="w" class="input bg-slate-100 input-bordered input-sm w-20 text-center text-xl " /><label for="" class="text-xl  pl-4">cm</label>
+                                <input id="ractangle-width" type="text" placeholder="w" class="input bg-slate-100 input-bordered input-sm w-20 text-center text-xl " /><label for="" class="text-xl  pl-4">cm</label>
                             </div>
                             <div class="w-2/4">
-                                <input type="text" placeholder="l" class="input bg-slate-100 input-bordered input-sm w-20 text-center text-xl" /><label for="" class="text-xl  pl-4">cm</label>
+                                <input id="ractangle-length" type="text" placeholder="l" class="input bg-slate-100 input-bordered input-sm w-20 text-center text-xl" /><label for="" class="text-xl  pl-4">cm</label>
                             </div>
                           </div>
                           <div class="card-actions mx-auto my-10">
-                            <button class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
+                            <button id="ractangle-btn" class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -93,16 +93,16 @@
                           <img src="./images/parallelogram.png" />
                         </figure>
                         <div class="mx-auto  text-center">
-                          <h2 class="card-title font-bold text-2xl mx-auto mt-16 mb-6">Parallelogram</h2>
+                          <h2 id="parallelogram" class="card-title font-bold text-2xl mx-auto mt-16 mb-6">Parallelogram</h2>
                           <p>Area (A) =  b x h</p>
                           <div class="">
                             <div class="mx-auto mt-4 mb-14">
-                                <h3 >b=<span>10</span>cm , h=<span>12</span>cm</h3>
+                                <h3 >b=<span id="parallelogram-base">10</span>cm , h=<span id="parallelogram-heigth">12</span>cm</h3>
                             </div>
                            
                           </div>
                           <div class="card-actions mx-auto my-10 mt-16">
-                            <button class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
+                            <button id="parallelogram-btn" class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -112,16 +112,16 @@
                           <img src="./images/rhombus.png" />
                         </figure>
                         <div class="mx-auto  text-center">
-                          <h2 class=" font-bold text-2xl  mt-16 mb-6">Rhombus</h2>
+                          <h2 id="rhombus" class=" font-bold text-2xl  mt-16 mb-6">Rhombus</h2>
                           <p>Area (A) = 0.5 x d1 x d2</p>
                           <div class="">
                             <div class="mx-auto mt-4 mb-14">
-                                <h3 >d1=<span>16</span>cm , d2=<span>8</span>cm</h3>
+                                <h3 >d1=<span id="rhombus-d1">16</span>cm , d2=<span id="rhombus-d2">8</span>cm</h3>
                             </div>
                            
                           </div>
                           <div class="card-actions mx-auto my-10 mt-16">
-                            <button class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
+                            <button id="rhombus-btn" class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -131,34 +131,35 @@
                           <img src="./images/pentagon.png" />
                         </figure>
                         <div class="mx-auto  text-center">
-                          <h2 class=" font-bold text-2xl mx-auto mt-16 mb-6">Pentagon</h2>
+                          <h2 id="pentagon" class=" font-bold text-2xl mx-auto mt-16 mb-6">Pentagon</h2>
                           <p>Area (A) = 0.5 x p x b</p>
                           <div class="">
                             <div class="mx-auto mt-4 mb-14">
-                                <h3 >p= <span>6</span>cm , b= <span>10</span>cm</h3>
+                                <h3 >p= <span id="pentagon-p">6</span>cm , b= <span id="pentagon-b">10</span>cm</h3>
                             </div>
                            
                           </div>
                           <div class="card-actions mx-auto my-10 mt-16">
-                            <button class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
+                            <button id="pentagon-btn" class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
                           </div>
                         </div>
                       </div>
+                      <!-- sixth card -->
                     <div class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10 mt-4 mb-4">
                           <img src="./images/ellipse.png" />
                         </figure>
                         <div class="mx-auto  text-center">
-                          <h2 class=" font-bold text-2xl mx-auto mt-16 mb-6">Ellipse</h2>
+                          <h2 id="ellipse" class=" font-bold text-2xl mx-auto mt-16 mb-6">Ellipse</h2>
                           <p>Area (A) =  πab</p>
                           <div class="">
                             <div class="mx-auto mt-4 mb-14">
-                                <h3 >a= <span>10</span>cm , b= <span>4</span>cm</h3>
+                                <h3 >a= <span id="ellipse-a">10</span>cm , b= <span id="ellipse-b">4</span>cm</h3>
                             </div>
                            
                           </div>
                           <div class="card-actions mx-auto my-10 mt-16">
-                            <button class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
+                            <button id="ellipse-btn" class="py-3 px-14 text-white text-xl font-bold bg-sky-600 rounded hover:bg-sky-400">Calculate</button>
                           </div>
                         </div>
                       </div>
