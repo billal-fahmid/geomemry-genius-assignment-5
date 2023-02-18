@@ -35,11 +35,13 @@ document.getElementById('triangle-btn').addEventListener('click' , function(){
     const base = getFieldValueById('triangle-field-b');
     const height = getFieldValueById('triangle-field-h');
     const area = .5 * base * height ;
-    if(isNaN(area) || area <=0 ){
+    const areaConvert = area.toFixed(2);
+    const areaFloat = parseFloat(areaConvert)
+    if(isNaN(areaFloat) || areaFloat <=0 ){
         return alert('please provide a valid number')
     }
-    setTheTable(serial,nameOfCalculation,area);
-    
+    setTheTable(serial,nameOfCalculation,areaFloat);
+    console.log(areaFloat,typeof areaFloat);
 })
 // Area (A) = w x l
 document.getElementById('ractangle-btn').addEventListener('click' , function(){
@@ -48,10 +50,12 @@ document.getElementById('ractangle-btn').addEventListener('click' , function(){
     const width = getFieldValueById('ractangle-width');
     const length = getFieldValueById('ractangle-length');
     const area = width * length;
-    if(isNaN(area) || area <= 0){
+    const areaConvert = area.toFixed(2);
+    if(isNaN(areaConvert) || areaConvert <= 0){
         return alert('please provide a valid number')
     }
-    setTheTable(serial,nameOfCalculation,area);
+    setTheTable(serial,nameOfCalculation,areaConvert);
+
 })
 // Area (A) = b x h
 document.getElementById('parallelogram-btn').addEventListener('click' , function(){
@@ -62,5 +66,13 @@ document.getElementById('parallelogram-btn').addEventListener('click' , function
     const area = base * height ;
     setTheTable(serial,nameOfCalculation,area);
 })
-
+// Area (A) = 0.5 x d1 x d2
+document.getElementById('rhombus-btn').addEventListener('click' , function(){
+    serial+=1;
+    const nameOfCalculation = getElementValueById('rhombus');
+    const d1 = parseFloat(getElementValueById('rhombus-d1'));
+    const d2 = parseFloat(getElementValueById('rhombus-d2'));
+    const area = 0.5 * d1 * d2 ;
+    setTheTable(serial,nameOfCalculation,area);
+})
 
