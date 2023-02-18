@@ -84,3 +84,14 @@ document.getElementById('pentagon-btn').addEventListener('click' , function(){
     const area = 0.5 * p * b ;
     setTheTable(serial,nameOfCalculation,area);
 })
+// Area (A) = πab
+document.getElementById('ellipse-btn').addEventListener('click' , function(){
+    serial+=1;
+    const nameOfCalculation = getElementValueById('ellipse');
+    const a = parseFloat(getElementValueById('ellipse-a'));
+    const b = parseFloat(getElementValueById('ellipse-b'));
+    const area = Math.PI * a * b ;
+    const areaConvert = area.toFixed(2);
+    const areaFloat = parseFloat(areaConvert);
+    setTheTable(serial,nameOfCalculation,areaFloat);
+})
