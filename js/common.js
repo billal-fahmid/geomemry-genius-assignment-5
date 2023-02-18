@@ -2,7 +2,9 @@
 function getFieldValueById(id){
     const field = document.getElementById(id);
     const fieldValue = parseFloat(field.value);
+    field.value ='';
     return fieldValue;
+    
 }
 
 // get the calculation name in the element inner text
