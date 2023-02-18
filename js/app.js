@@ -53,5 +53,14 @@ document.getElementById('ractangle-btn').addEventListener('click' , function(){
     }
     setTheTable(serial,nameOfCalculation,area);
 })
+// Area (A) = b x h
+document.getElementById('parallelogram-btn').addEventListener('click' , function(){
+    serial+=1;
+    const nameOfCalculation = getElementValueById('parallelogram');
+    const base = parseFloat(getElementValueById('parallelogram-base'));
+    const height = parseFloat(getElementValueById('parallelogram-heigth'));
+    const area = base * height ;
+    setTheTable(serial,nameOfCalculation,area);
+})
 
 
