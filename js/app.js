@@ -3,7 +3,7 @@ let serial = 0;
 
 // Area (A) = 0.5 x b x h
 document.getElementById('triangle-btn').addEventListener('click' , function(){
-    serial+=1;
+    
     const nameOfCalculation = getElementValueById('triangle');
     const base = getFieldValueById('triangle-field-b');
     const height = getFieldValueById('triangle-field-h');
@@ -13,12 +13,13 @@ document.getElementById('triangle-btn').addEventListener('click' , function(){
     if(isNaN(areaFloat) || areaFloat <=0 ){
         return alert('please provide a valid number')
     }
+    serial+=1;
     setTheTable(serial,nameOfCalculation,areaFloat);
-  
+    
 })
 // Area (A) = w x l
 document.getElementById('ractangle-btn').addEventListener('click' , function(){
-    serial+=1;
+    
     const nameOfCalculation = getElementValueById('ractangle');
     const width = getFieldValueById('ractangle-width');
     const length = getFieldValueById('ractangle-length');
@@ -28,6 +29,7 @@ document.getElementById('ractangle-btn').addEventListener('click' , function(){
     if(isNaN(areaFloat) || areaFloat <= 0){
         return alert('please provide a valid number')
     }
+    serial+=1;
     setTheTable(serial,nameOfCalculation,areaFloat);
 
 })
