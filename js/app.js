@@ -75,4 +75,12 @@ document.getElementById('rhombus-btn').addEventListener('click' , function(){
     const area = 0.5 * d1 * d2 ;
     setTheTable(serial,nameOfCalculation,area);
 })
-
+// Area (A) = 0.5 x p x b
+document.getElementById('pentagon-btn').addEventListener('click' , function(){
+    serial+=1;
+    const nameOfCalculation = getElementValueById('pentagon');
+    const p = parseFloat(getElementValueById('pentagon-p'));
+    const b = parseFloat(getElementValueById('pentagon-b'));
+    const area = 0.5 * p * b ;
+    setTheTable(serial,nameOfCalculation,area);
+})
