@@ -24,3 +24,7 @@ function setTheTable(serial,name,result){
     `
     tableBody.appendChild(tr);
 }
+function setRandomBackgoundColor(id){
+    const cards = document.getElementById(id);
+    cards.style.backgroundColor ='#'+Math.floor(Math.random()*16777215).toString(16);
+}

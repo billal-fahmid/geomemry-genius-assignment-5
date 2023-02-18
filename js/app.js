@@ -69,3 +69,11 @@ document.getElementById('ellipse-btn').addEventListener('click' , function(){
     const areaFloat = parseFloat(areaConvert);
     setTheTable(serial,nameOfCalculation,areaFloat);
 })
+const cards= document.getElementsByClassName('card');
+for(let i=0 ; i< cards.length ; i++){
+    // cards[i].style.hover:backgroundColor ='#'+Math.floor(Math.random()*16777215).toString(16);
+    document.getElementsByClassName
+}
+document.getElementById('card-1').addEventListener('mouseenter', function(){
+    setRandomBackgoundColor('card-1');
+})
